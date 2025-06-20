@@ -1,0 +1,46 @@
+# ───────────────────────────────────────────────────────────
+# OS files
+# ───────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ───────────────────────────────────────────────────────────
+# IDE & project files
+# ───────────────────────────────────────────────────────────
+*.iml
+.idea/
+.vscode/
+
+# ───────────────────────────────────────────────────────────
+# Android / Gradle (android/)
+# ───────────────────────────────────────────────────────────
+/android/.gradle/
+/android/local.properties
+/android/.idea/
+/android/.cxx/
+/android/captures/
+/android/.externalNativeBuild/
+/android/build/
+/android/app/build/
+/android/*.apk
+/android/*.aab
+/android/output-metadata.json
+/android/google-services.json
+
+# ───────────────────────────────────────────────────────────
+# Node.js (server/)
+# ───────────────────────────────────────────────────────────
+/server/node_modules/
+/server/.env
+/server/npm-debug.log*
+/server/yarn-debug.log*
+/server/yarn-error.log*
+
+# ───────────────────────────────────────────────────────────
+# Miscellaneous
+# ───────────────────────────────────────────────────────────
+*.log
+
+
+# macOS Finder files
+.DS_Store
