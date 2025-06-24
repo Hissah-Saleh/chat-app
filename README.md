@@ -76,6 +76,7 @@ A simple Android chat app using Socket.IO applying MVVM and clean arcticture.
 - Lottie animation on typing indicator  
 - Dark mode support  
 - Active users counter (shows number of users currently in chat)
+- Tap on an image or video message to open a full-screen preview 
 
 ---
 
