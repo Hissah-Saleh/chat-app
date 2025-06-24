@@ -85,8 +85,12 @@ A simple Android chat app using Socket.IO applying MVVM and clean arcticture.
 
 ```plaintext
 chat-app/
-├─ server/    # Node.js Socket.IO server
-└─ android/   # Android Studio project
+├─ .gitignore      # Git ignore rules
+├─ README.md       # This file
+├─ preview/        # Demo GIF and any static assets
+│  └─ demo.gif
+├─ server/         # Node.js Socket.IO server
+└─ android/        # Android Studio project
    ├─ app/
    │  ├─ src/
    │  │  ├─ main/
