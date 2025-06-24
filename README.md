@@ -1,4 +1,4 @@
-# Real-Time Chat Application
+# Chat Application
 
 A simple Android chat app using Socket.IO applying MVVM and clean arcticture.
 
