@@ -72,11 +72,12 @@ A simple Android chat app using Socket.IO applying MVVM and clean arcticture.
 
 ## ✨ Bonus Features
 
-- Inline media preview (images + video view + audio player)  
-- Lottie animation on typing indicator  
+- Embedded display for images, a video player for video messages, and an audio player for audio messages directly within the chat feed  
+- Show Lottie animation on typing indicator  
 - Dark mode support  
 - Active users counter (shows number of users currently in chat)
-- Tap on an image or video message to open a full-screen preview 
+- Tap on an image or video message to open a full-screen preview
+- Preview media before sending it
 
 ---
 
