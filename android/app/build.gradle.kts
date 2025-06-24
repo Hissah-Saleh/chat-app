@@ -1,7 +1,12 @@
+import org.gradle.kotlin.dsl.kapt
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
+
 }
 
 android {
@@ -28,11 +33,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
     }
     buildFeatures {
         compose = true
@@ -56,4 +61,37 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(libs.socketio)
+    implementation(libs.activity.compose)
+    implementation(libs.compose.ui)
+    implementation(libs.compose.material)
+    implementation(libs.compose.ui.tooling.preview)
+    implementation(libs.lifecycle.runtime.ktx)
+    implementation(libs.lifecycle.viewmodel.compose)
+    implementation(libs.timber)
+    implementation(libs.hilt.android )
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.hilt.navigation.compose)
+    kapt(libs.hilt.android.compiler)
+    implementation(libs.androidx.datastore.preferences)
+
+    implementation( libs.compose)
+
+    // Retrofit core
+    implementation (libs.retrofit)
+    // JSON converter (if you’re using Gson)
+    implementation (libs.converter.gson)
+    // (Optional) Logging for debugging
+    implementation (libs.logging.interceptor)
+
+    implementation (libs.androidx.documentfile)
+
+    implementation ("com.airbnb.android:lottie-compose:6.0.0")
+
+
+}
+
+//Allow references to generated code
+kapt {
+    correctErrorTypes = true
 }

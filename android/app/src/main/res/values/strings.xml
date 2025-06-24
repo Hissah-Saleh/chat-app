@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ChatApp</string>
+    <string name="username">Enter your username</string>
+    <string name="submit">Submit</string>
+    <string name="message">Message</string>
+    <string name="error_max_size">"File is too large (max 20 MB)"</string>
+    <string name="send">Send</string>
+    <string name="online">Online users</string>
+
 </resources>
