@@ -38,14 +38,6 @@ fun formatMs(ms: Int): String {
 }
 
 
-fun getYourOwnDeviceIpAddress():String{
-   return if (isEmulator())
-        "http://10.0.2.2:3000" // running on emulator
-   else
-       TODO() // if you running on real android device handle your own server ip
-}
-
-
 fun isEmulator(): Boolean {
     return (Build.FINGERPRINT.startsWith("generic")
             || Build.FINGERPRINT.lowercase().contains("vbox")
