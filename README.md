@@ -82,7 +82,7 @@ A simple Android chat app using Socket.IO applying MVVM and clean arcticture.
 ## 📂 Project Structure
 
 ```plaintext
-realtime-chat-assessment/
+chat-app/
 ├─ server/    # Node.js Socket.IO server
 └─ android/   # Android Studio project
    ├─ app/
