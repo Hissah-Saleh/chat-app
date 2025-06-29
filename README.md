@@ -32,7 +32,9 @@ A simple Android chat app using Socket.IO applying MVVM and clean arcticture.
 2. **Start the Server**  
    ```bash
    cd server
-   npm install express socket.io multer uuid dotenv
+   npm init -y  # initialize package.json (skip if exists)
+   npm install multer uuid dotenv
+   npm install express socket.io cors
    node server.js
    ```  
    - Runs on `http://<YOUR_MACHINE_IP>:3000` (replace `<YOUR_MACHINE_IP>` with your actual LAN IP, e.g. `192.168.1.42`; set `Constants.CHAT_SERVER_URL` accordingly). **Ensure both your server and Android device/emulator are on the same local network (LAN) so the app can connect.**
